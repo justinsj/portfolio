@@ -45,7 +45,7 @@ export class MediumArticlesProvider {
         title,
         description: description.replace(/<(.*?)>/g,''), // Remove HTML format
         url: link,
-        tags: categories,
+        tags: categories.map((category: string) => category.replace(/-/g,' ')),
         publishedAt: pubDate,
       };
       articles.push(article);
