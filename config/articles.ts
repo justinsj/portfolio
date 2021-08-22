@@ -1,5 +1,5 @@
 import { ArticlesProvider } from '../providers/articles/ArticlesProvider';
-import { DevToArticlesProvider } from '../providers/articles/DevToArticlesProvider';
+import { MediumArticlesProvider } from '../providers/articles/MediumArticlesProvider';
 
 export type ArticlesConfig = {
   renderer: ArticlesProvider,
@@ -8,8 +8,7 @@ export type ArticlesConfig = {
 export type Articles = ArticlesConfig;
 
 export const articles: ArticlesConfig = {
-  renderer: new DevToArticlesProvider(
-    'karanpratapsingh',
-    'https://dev.to/api/articles'
+  renderer: new MediumArticlesProvider(
+    'justinsj',
   ),
 };
