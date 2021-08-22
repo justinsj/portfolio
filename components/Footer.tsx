@@ -1,6 +1,9 @@
 import { Layout } from 'antd';
 import React, { memo } from 'react';
 import SocialIcons from './SocialIcons';
+import config from '../config';
+
+const { personal } = config;
 
 function Footer(): React.ReactElement {
   const year: number = new Date().getFullYear();
@@ -13,7 +16,7 @@ function Footer(): React.ReactElement {
       </span>
       <SocialIcons />
       <span className='mt-12 lg:mt-16 text-xs font-light'>
-        &copy; {year} Karan Pratap Singh
+        &copy; {year} {personal.fullName}
       </span>
     </Layout.Footer>
   );
