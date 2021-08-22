@@ -29,7 +29,7 @@ function Article(props: ArticleProps): React.ReactElement {
           <span className='text-lg font-bold truncate text-ellipsis'>
             {title}
           </span>
-          <div className='flex my-2'>
+          <div className='flex my-2 overflow-x-hidden'>
             {React.Children.toArray(tags.map(renderTags))}
           </div>
           <span className='text-sm font-light line-clamp-2'>{description}</span>
