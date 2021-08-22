@@ -6,6 +6,8 @@ export enum Stack {
   typescript,
   javascript,
   python,
+  java,
+  csharp,
 
   // Frontend
   react,
@@ -26,18 +28,19 @@ export enum Stack {
   redis,
   postgres,
   mongo,
+  wordpress,
 }
 
 export const WorkStack = [
-  Stack.typescript,
   Stack.go,
   Stack.react,
   Stack.reactnative,
-  Stack.graphql,
+  Stack.java,
+  Stack.python,
+  Stack.javascript,
   Stack.kubernetes,
   Stack.docker,
   Stack.aws,
-  Stack.gcp,
 ];
 
 type StackInfoMap = {
@@ -53,6 +56,10 @@ export const StackInfo: Record<Stack, StackInfoMap> = {
   [Stack.javascript]: {
     value: 'JavaScript',
     color: Colors.javascript,
+  },
+  [Stack.java]: {
+    value: 'Java',
+    color: Colors.java,
   },
   [Stack.go]: {
     value: 'Go',
@@ -110,5 +117,13 @@ export const StackInfo: Record<Stack, StackInfoMap> = {
   [Stack.mongo]: {
     value: 'MongoDB',
     color: Colors.mongo,
+  },
+  [Stack.wordpress]: {
+    value: 'WordPress',
+    color: Colors.wordpress,
+  },
+  [Stack.csharp]: {
+    value: 'C#',
+    color: Colors.csharp,
   },
 };

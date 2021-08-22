@@ -12,12 +12,12 @@ export interface Contact {
 }
 
 export const contact: Contact = {
-  twitter: '@karan__6864',
-  site: 'karanpratapsingh.com',
+  twitter: '@JustinSJ16',
+  site: 'justinsj.com',
   links: {
-    github: 'https://github.com/karanpratapsingh',
-    linkedin: 'https://linkedin.com/in/karanpratapsingh4999',
-    twitter: 'https://twitter.com/karan_6864',
-    email: 'mailto:contact@karanpratapsingh.com',
+    github: 'https://github.com/justinsj',
+    linkedin: 'https://linkedin.com/in/justinsj',
+    twitter: 'https://twitter.com/justinsj16',
+    email: 'mailto:justin.sanjuan@uwaterloo.ca',
   },
 };
