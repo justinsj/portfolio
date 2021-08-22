@@ -6,7 +6,7 @@ export type Env =
 export type Maybe<T> = T | null;
 
 export type Article = {
-  id: number;
+  id: string;
   title: string;
   description: string;
   url: string;
