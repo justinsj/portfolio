@@ -1,6 +1,6 @@
 import { Article } from '../../types';
-import axios, { AxiosError, AxiosRequestConfig, AxiosResponse } from 'axios';
-import { async } from '../../utils';
+
+const { parse } = require('medium-rss-to-json');
 
 export class MediumArticlesProvider {
   private username: string;
@@ -14,42 +14,31 @@ export class MediumArticlesProvider {
 
     const articles: Article[] = [];
 
-    const url: string = `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@${username}`;
-    const request: AxiosRequestConfig = {};
+    const url: string = `https://medium.com/feed/@${username}`;
 
-    const [response, error] = await async<AxiosResponse, AxiosError>(
-      axios.get(url, request),
-    );
+    const response = await parse(url);
 
-    if (error) {
-      const message = error?.response?.data?.error?.message;
-      console.log(message);
-      return articles;
-    }
-
-    response?.data.items.forEach((data: any) => {
+    response.items.forEach((data: any) => {
       const {
-        guid,
+        id,
         title,
-        description,
-        categories,
-        pubDate,
+        content_encoded,
+        published,
+        category,
         link,
       } = data;
-
-      const guidItems = guid.split("/");
-      const id = guidItems[guidItems.length - 1];
 
       const article: Article = {
         id,
         title,
-        description: description.replace(/<(.*?)>/g,''), // Remove HTML format
+        description: content_encoded.replace(/<(.*?)>/g,''), // Remove HTML format
         url: link,
-        tags: categories.map((category: string) => category.replace(/-/g,' ')),
-        publishedAt: pubDate,
+        tags: category.map((tag: string) => tag.replace(/-/g,' ')),
+        publishedAt: new Date(published).toISOString(),
       };
       articles.push(article);
     });
+
 
     return articles;
   }
