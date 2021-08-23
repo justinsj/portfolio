@@ -37,6 +37,7 @@ export const WorkStack = [
   Stack.reactnative,
   Stack.java,
   Stack.python,
+  Stack.typescript,
   Stack.javascript,
   Stack.kubernetes,
   Stack.docker,

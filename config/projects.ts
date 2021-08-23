@@ -34,7 +34,7 @@ export const projects: Project[] = [
   {
     id: 0,
     title: 'WhatsApp Team Inbox',
-    banner: 'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/WATI%2FWATI.PNG?alt=media&token=7b32ec7c-ff49-4a69-9251-94bd55a9371a',
+    banner: 'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/WATI%2FWATI.PNG?alt=media&token=27e28d1b-c0bc-4eaf-8be8-018dbff87564',
     website: 'https://www.wati.io/',
     description: 'Commercial WhatsApp Business API Solution',
     repository: null,
@@ -60,7 +60,7 @@ export const projects: Project[] = [
   {
     id: 1,
     title: 'Distributed Concurrent Image Processing',
-    banner: 'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/DCIP%2Farchitecture.png?alt=media&token=0a752c5e-ba8a-4247-a2f9-9aaaf5a70336',
+    banner: 'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/DCIP%2Farchitecture.png?alt=media&token=68bb6137-d710-4d23-89ee-f2de137cd21e',
     website: 'https://justinsj.com',
     description: 'Scalable Kubernetes & Docker distributed system for mass-processing of image payloads.',
     repository: null,
@@ -80,7 +80,7 @@ export const projects: Project[] = [
   {
     id: 2,
     title: 'Readily Chrome Extension',
-    banner: 'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/Readily%2Fbanner.PNG?alt=media&token=1c802edb-8323-4c0f-a98a-32c6122a621b',
+    banner: 'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/Readily%2Fbanner.PNG?alt=media&token=ac98f0a7-88cc-45cd-ae6d-ecaed9168ace',
     website: 'https://chrome.google.com/webstore/detail/readily/cmlialhageknokecbdeicpjeljbpdgbh?hl=en',
     description: 'Reading Made Easier. Made for enhancing focus and empowering readership among people.',
     repository: null,
