@@ -14,6 +14,11 @@ This was written to be configurable since the start, so you can simply override 
 
 Custom providers can also be easily implemented. For example if you'd like to render articles from `medium.com` rather than `dev.to`.
 
+## Contributions
+@justinsj
+- Refactored article provider to use Strategy Design Pattern
+- Added support for rendering articles from Medium
+
 ## Install
 
 ```
