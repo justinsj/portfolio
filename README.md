@@ -1,7 +1,7 @@
 <div align="center">
   <img alt="Logo" src="https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/github%2Ficon.png?alt=media&token=8baf6233-cb13-4ef1-bb43-f95a78e98eb1" width="100px" />
 </div>
-<h1 align="center">
+<h1 align="center" onclick="window.open("https://justinsj.com","_blank");">
   justinsj.com
 </h1>
 <p align="center">
@@ -15,7 +15,7 @@ This was written to be configurable since the start, so you can simply override 
 Custom providers can also be easily implemented. For example if you'd like to render articles from `medium.com` rather than `dev.to`.
 
 ## Contributions
-@justinsj
+[@justinsj](https://github.com/justinsj) [Justin's portfolio](https://justinsj.com)
 - Refactored article provider to use Strategy Design Pattern
 - Added support for rendering articles from Medium
 
