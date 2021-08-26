@@ -1,8 +1,10 @@
 import config from 'config';
-import { memo, useMemo } from 'react';
+import React, { memo, useMemo } from 'react';
 import { getRandomColorPair } from 'utils';
 import ColorText from './ColorText';
 import Conditional from './Conditional';
+import { background } from './Card/Base';
+import Image from 'next/image';
 
 const { personal } = config;
 
@@ -17,6 +19,19 @@ function Banner(props: BannerProps): React.ReactElement {
 
   return (
     <div className='banner flex flex-col flex-1 justify-center px-6 lg:px-10 py-10 dark:text-white'>
+      <Conditional condition={personal.photo}>
+        <div className='flex self-center sm:self-start mb-5 sm:mb-3 lg:mb-5 h-32 w-32 lg:w-44 lg:h-44 relative'>
+          <Image
+            className='rounded-full'
+            loading='eager'
+            src={personal.photo}
+            layout='fill'
+            objectFit='cover'
+            alt={`${personal.fullName}'s profile photo`}
+          />
+        </div>
+      </Conditional>
+
       <h1 className='text-3xl lg:text-5xl font-bold dark:text-white'>
         Hi, I am {personal.name}
       </h1>
