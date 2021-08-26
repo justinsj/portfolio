@@ -39,3 +39,8 @@ npm run dev
 npm run build
 npm run start
 ```
+
+## Deploy
+```
+docker build --network=host -t justinsj/portfolio:latest . && docker push justinsj/portfolio:latest
+```
