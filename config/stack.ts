@@ -12,6 +12,7 @@ export enum Stack {
   // Frontend
   react,
   reactnative,
+  d3,
 
   // Backend
   graphql,
@@ -29,12 +30,17 @@ export enum Stack {
   postgres,
   mongo,
   wordpress,
+
+  // Skills
+  algorithms,
 }
 
 export const WorkStack = [
+  Stack.algorithms,
   Stack.go,
   Stack.react,
   Stack.reactnative,
+  Stack.d3,
   Stack.java,
   Stack.python,
   Stack.typescript,
@@ -126,5 +132,13 @@ export const StackInfo: Record<Stack, StackInfoMap> = {
   [Stack.csharp]: {
     value: 'C#',
     color: Colors.csharp,
+  },
+  [Stack.d3]: {
+    value: 'D3',
+    color: Colors.d3,
+  },
+  [Stack.algorithms]: {
+    value: 'Algorithms',
+    color: Colors.algorithms,
   },
 };

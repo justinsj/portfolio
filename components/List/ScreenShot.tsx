@@ -28,7 +28,6 @@ function ScreenShotList(props: ScreenShotListProps): React.ReactElement {
           style={style}
         >
           <Image
-            loading='eager'
             src={screenshot}
             height={height}
             width={width}

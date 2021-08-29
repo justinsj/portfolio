@@ -33,10 +33,27 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: 0,
+    title: 'Graph Algorithms Visualization',
+    banner: 'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/Graphs%2Fdemo.gif?alt=media&token=814893d2-8659-45ba-9274-fd3f269cfe80',
+    website: 'https://graphs.justinsj.com/',
+    description: 'Graph algorithms implemented and visualized in D3.',
+    repository: null,
+    stack: [
+      Stack.algorithms,
+      Stack.d3,
+    ],
+    screenshots: [],
+    deployment: {
+      web: 'https://graphs.justinsj.com/',
+    },
+    subProjects: [],
+  },
+  {
+    id: 1,
     title: 'WhatsApp Team Inbox',
     banner: 'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/WATI%2FWATI.PNG?alt=media&token=27e28d1b-c0bc-4eaf-8be8-018dbff87564',
     website: 'https://www.wati.io/',
-    description: 'Commercial WhatsApp Business API Solution',
+    description: 'Commercial WhatsApp Business API Solution.',
     repository: null,
     stack: [
       Stack.csharp,
@@ -58,7 +75,7 @@ export const projects: Project[] = [
     subProjects: [],
   },
   {
-    id: 1,
+    id: 2,
     title: 'Distributed Concurrent Image Processing',
     banner: 'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/DCIP%2Farchitecture.png?alt=media&token=68bb6137-d710-4d23-89ee-f2de137cd21e',
     website: 'https://justinsj.com',
@@ -78,7 +95,7 @@ export const projects: Project[] = [
   },
   // Readily
   {
-    id: 2,
+    id: 3,
     title: 'Readily Chrome Extension',
     banner: 'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/Readily%2Fbanner.PNG?alt=media&token=ac98f0a7-88cc-45cd-ae6d-ecaed9168ace',
     website: 'https://chrome.google.com/webstore/detail/readily/cmlialhageknokecbdeicpjeljbpdgbh?hl=en',
@@ -100,9 +117,26 @@ export const projects: Project[] = [
     },
     subProjects: [],
   },
+  {
+	id: 4,
+    title: 'React Awesome Popups',
+    banner: 'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/react-awesome-popups%2Fdemo.gif?alt=media&token=d9e43158-8d63-40af-adcd-f861d096f76c',
+    website: 'https://github.com/justinsj/react-awesome-popups',
+    description: 'A lightweight, extendable, fast performing, highly customizeable, production ready React Component that renders an animated set of popups.',
+    repository: 'https://github.com/justinsj/react-awesome-popups',
+    stack: [
+      Stack.react,
+    ],
+    screenshots: [],
+    deployment: {
+      web: 'https://github.com/justinsj/react-awesome-popups',
+    },
+    subProjects: [],
+	
+  },
   // Unify
   {
-    id: 3,
+    id: 5,
     title: 'Unify',
     banner: 'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/Unify%2FX%20-%201.png?alt=media&token=1027d3ac-41a2-4d51-9c36-624a6bcd3a00',
     website: 'https://justinsj.wixsite.com/portfolio#comp-jig5bc3k',
@@ -127,7 +161,7 @@ export const projects: Project[] = [
   // Financial Planner
   // Song Association
   {
-    id: 4,
+    id: 6,
     title: 'Song Association',
     banner: 'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/Song%20Association%2Fbanner.webp?alt=media&token=289d4e75-a308-469e-a080-7afee7356123',
     website: 'https://play.google.com/store/apps/details?id=com.justinsj.songassociation',
@@ -183,12 +217,12 @@ export const projects: Project[] = [
   // },
 
   {
-    id: 5,
+    id: 7,
     title: 'Abigail Farm Supply Website',
     website: 'https://abigailfarmsupply.com/',
     banner: 'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/AFSI%2FAFSI-banner.PNG?alt=media&token=e9236189-f302-4f68-90b5-d93719a56144',
     description:
-      'An interactive company website with custom display components on WordPress.',
+      'An interactive responsive company website with custom display components on WordPress.',
     repository: null,
     stack: [
       Stack.wordpress,
@@ -243,4 +277,20 @@ export const projects: Project[] = [
   //   subProjects: [],
   // },
 
+  {
+    id: 8,
+    title: 'My Garden Online',
+    website: 'https://my-garden-online.com/',
+    banner: 'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/my-garden-online%2Fbanner.png?alt=media&token=56d3fd9a-3f3d-48e7-8f04-1cf56a0f0ba3',
+    description:
+      'Live-stream every plant you buy. Take care of your garden with water and fertilizer from the comfort of your home online.',
+    repository: null,
+    stack: [
+      Stack.wordpress,
+      Stack.react,
+    ],
+    screenshots: [],
+    deployment: {},
+    subProjects: [],
+  },
 ];

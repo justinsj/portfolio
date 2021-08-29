@@ -10,6 +10,7 @@ export const Colors: Record<string, string> = {
   // Frontend
   react: '#61DAF6',
   nextjs: '#000000',
+  d3: '#e97d1b',
 
   // Backend
   graphql: '#E535AB',
@@ -48,6 +49,9 @@ export const Colors: Record<string, string> = {
   testing: '#049C64',
   devops: '#059F00',
   resume: '#EEEBFF',
+
+  // Skills
+  algorithms: '#D44638',
 
   // Custom
   photography: '#000000',
@@ -90,5 +94,10 @@ export const Colors: Record<string, string> = {
   'best practices': '#F5DB53',
   webp: '#006d9f',
   optimization: '#dd8c01',
+  workplace: '#d4a538',
+  'software engineering': '#062560',
+  'education': '#1c4f0b',
+  'learning and development': '#1c9698',
+  'mental health': '#ba5353',
 
 };
