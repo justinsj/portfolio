@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="Logo" src="https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/github%2Ficon.png?alt=media&token=8baf6233-cb13-4ef1-bb43-f95a78e98eb1" width="100px" />
+  <img alt="Logo" src="https://github.com/justinsj/portfolio/blob/master/icon.png" width="100px" />
 </div>
 <h1 align="center">
   <a href="https://justinsj.com" target="_blank">
