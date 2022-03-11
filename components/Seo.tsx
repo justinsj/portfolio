@@ -4,7 +4,7 @@ import { NextSeo } from 'next-seo';
 const { personal, contact } = config;
 
 function Seo(): React.ReactElement {
-  const description: string = `${personal.name}'s portfolio`;
+  const description: string = `${personal.desc}`;
 
   const additionalLinkTags = [
     {

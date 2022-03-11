@@ -16,7 +16,7 @@ export const contact: Contact = {
   site: 'justinsj.com',
   links: {
     github: 'https://github.com/justinsj',
-    linkedin: 'https://linkedin.com/in/justinsj',
+    linkedin: 'https://linkedin.com/in/justin-sj',
     twitter: 'https://twitter.com/justinsj16',
     email: 'mailto:justin.sanjuan@uwaterloo.ca',
   },

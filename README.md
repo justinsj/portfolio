@@ -7,7 +7,7 @@
   </a>
 </h1>
 <p align="center">
-  My portfolio built with <a href="https://nextjs.org/" target="_blank">Nextjs</a> and hosted on AWS.
+  My portfolio built with <a rel="nofollow" href="https://nextjs.org/" target="_blank">Nextjs</a> and hosted on AWS.
 </p>
 
 ## Make it your own!
