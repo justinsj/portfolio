@@ -41,6 +41,12 @@ npm run start
 ```
 
 ## Deploy
+On a build worker:
 ```
 docker build --network=host -t justinsj/portfolio:latest . && docker push justinsj/portfolio:latest
+```
+
+On the host server:
+```
+docker pull justinsj/portfolio:latest && docker-compose pull && docker-compose up -d --remove-orphans && docker image prune -f
 ```
