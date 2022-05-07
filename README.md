@@ -7,8 +7,14 @@
   </a>
 </h1>
 <p align="center">
-  My portfolio built with <a rel="nofollow" href="https://nextjs.org/" target="_blank">Nextjs</a> and hosted on Vercel.
+  My portfolio built with <a rel="nofollow" href="https://nextjs.org/" target="_blank">Nextjs</a> and hosted on <a rel="nofollow" href="https://www.vercel.com/" target="_blank">Vercel</a>
 </p>
+<p align="center">
+  <a href="https://justinsj.com" target="_blank">
+    <img src="http://therealsujitk-vercel-badge.vercel.app/?app=portfolio&style=for-the-badge" alt="Vercel Status" />
+  </a>
+</p>
+
 
 ## Make it your own!
 
