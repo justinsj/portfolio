@@ -22,7 +22,7 @@ function Banner(props: BannerProps): React.ReactElement {
       <Conditional condition={personal.photo}>
         <div className='flex self-center sm:self-start mb-5 sm:mb-3 lg:mb-5 h-32 w-32 lg:w-44 lg:h-44 relative'>
           <Image
-            className='rounded-full' src={personal.photo}
+            className='rounded-full' src={personal.photo ? personal.photo : ''}
             layout='fill'
             objectFit='cover'
             alt={`${personal.fullName}'s profile photo`}
