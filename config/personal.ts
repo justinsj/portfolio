@@ -4,7 +4,7 @@ export interface Personal {
   title: string;
   about: string;
   desc: string;
-  photo: string;
+  photo?: string;
   resume: string;
   available: boolean;
 }
@@ -20,7 +20,6 @@ export const personal: Personal = {
     avid open source contributor who values learning and growing with people, teams, and technologies.
   `,
   desc: 'Justin San Juan is a software engineer with over 4 years of experience in cloud computing, e-commerce, NLP Chatbots, ML, and system design.',
-  photo: 'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/others%2Fprofile%20photo.jpg?alt=media&token=ed7ed98d-7a99-42f1-b4d4-1326357f66ed',
   resume:
     'https://drive.google.com/file/d/11aQ9crBbp2L7DXCPFPcZH4aE1gL2Zj1V/view?usp=sharing',
   available: true,

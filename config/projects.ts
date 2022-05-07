@@ -34,7 +34,7 @@ export const projects: Project[] = [
   {
     id: 0,
     title: 'Recommender System UI',
-    banner: 'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/rec-sys-ui%2Fcover.jpg?alt=media&token=2f055279-adaf-4705-982d-5488526a17ec',
+    banner: 'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/rec-sys-ui%2Fcover.jpg?alt=media&token=4b811cf9-2499-4668-8fcf-0056f92f1a29',
     website: 'https://justinsj.com/',
     description: 'Tailoring Product Recommendations for Mobile Devices. A research project in user interface design. Includes a React Native prototype app, web scraping code, logging & analysis AWS infrastructure, and report.',
     repository: 'https://github.com/justinsj/recommender-system-ui',
@@ -46,7 +46,7 @@ export const projects: Project[] = [
     screenshots: [
       'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/rec-sys-ui%2Fhome.jpg?alt=media&token=44f292b9-7c19-4412-9a35-95571f8e374a',
       'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/rec-sys-ui%2Frecs-control.jpg?alt=media&token=e439c559-2f2d-49f1-81ed-83ebd5be76b0',
-      'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/rec-sys-ui%2Frecs-control.jpg?alt=media&token=e439c559-2f2d-49f1-81ed-83ebd5be76b0',
+      'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/rec-sys-ui%2Fproduct.jpg?alt=media&token=e903c544-9fee-48fb-8a44-a13eea4acdc5',
       'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/rec-sys-ui%2Fcomplete.jpg?alt=media&token=1e12e9b9-f5f7-44eb-a48d-82f3004bdd47',
       'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/rec-sys-ui%2Fsetup.jpg?alt=media&token=a8d9697f-2642-4d15-a1de-e68c694b72c3',
     ],
