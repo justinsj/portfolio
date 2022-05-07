@@ -33,6 +33,28 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: 0,
+    title: 'Recommender System UI',
+    banner: 'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/rec-sys-ui%2Fcover.jpg?alt=media&token=2f055279-adaf-4705-982d-5488526a17ec',
+    website: 'https://justinsj.com/',
+    description: 'Tailoring Product Recommendations for Mobile Devices. A research project in user interface design. Includes a React Native prototype app, web scraping code, logging & analysis AWS infrastructure, and report.',
+    repository: 'https://github.com/justinsj/recommender-system-ui',
+    stack: [
+      Stack.reactnative,
+      Stack.node,
+      Stack.aws,
+    ],
+    screenshots: [
+      'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/rec-sys-ui%2Fhome.jpg?alt=media&token=44f292b9-7c19-4412-9a35-95571f8e374a',
+      'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/rec-sys-ui%2Frecs-control.jpg?alt=media&token=e439c559-2f2d-49f1-81ed-83ebd5be76b0',
+      'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/rec-sys-ui%2Frecs-control.jpg?alt=media&token=e439c559-2f2d-49f1-81ed-83ebd5be76b0',
+      'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/rec-sys-ui%2Fcomplete.jpg?alt=media&token=1e12e9b9-f5f7-44eb-a48d-82f3004bdd47',
+      'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/rec-sys-ui%2Fsetup.jpg?alt=media&token=a8d9697f-2642-4d15-a1de-e68c694b72c3',
+    ],
+    deployment: {},
+    subProjects: [],
+  },
+  {
+    id: 1,
     title: 'Graph Algorithms Visualization',
     banner: 'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/Graphs%2Fdemo.gif?alt=media&token=814893d2-8659-45ba-9274-fd3f269cfe80',
     website: 'https://graphs.justinsj.com/',
@@ -49,7 +71,7 @@ export const projects: Project[] = [
     subProjects: [],
   },
   {
-    id: 1,
+    id: 2,
     title: 'WhatsApp Team Inbox',
     banner: 'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/WATI%2FWATI.PNG?alt=media&token=27e28d1b-c0bc-4eaf-8be8-018dbff87564',
     website: 'https://www.wati.io/',
@@ -75,7 +97,7 @@ export const projects: Project[] = [
     subProjects: [],
   },
   {
-    id: 2,
+    id: 3,
     title: 'Distributed Concurrent Image Processing',
     banner: 'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/DCIP%2Farchitecture.png?alt=media&token=68bb6137-d710-4d23-89ee-f2de137cd21e',
     website: 'https://justinsj.com',
@@ -95,7 +117,7 @@ export const projects: Project[] = [
   },
   // Readily
   {
-    id: 3,
+    id: 4,
     title: 'Readily Chrome Extension',
     banner: 'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/Readily%2Fbanner.PNG?alt=media&token=ac98f0a7-88cc-45cd-ae6d-ecaed9168ace',
     website: 'https://chrome.google.com/webstore/detail/readily/cmlialhageknokecbdeicpjeljbpdgbh?hl=en',
@@ -118,7 +140,7 @@ export const projects: Project[] = [
     subProjects: [],
   },
   {
-	id: 4,
+	id: 5,
     title: 'React Awesome Popups',
     banner: 'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/react-awesome-popups%2Fdemo.gif?alt=media&token=d9e43158-8d63-40af-adcd-f861d096f76c',
     website: 'https://github.com/justinsj/react-awesome-popups',
@@ -136,7 +158,7 @@ export const projects: Project[] = [
   },
   // Unify
   {
-    id: 5,
+    id: 6,
     title: 'Unify',
     banner: 'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/Unify%2FX%20-%201.png?alt=media&token=1027d3ac-41a2-4d51-9c36-624a6bcd3a00',
     website: 'https://justinsj.wixsite.com/portfolio#comp-jig5bc3k',
@@ -161,7 +183,7 @@ export const projects: Project[] = [
   // Financial Planner
   // Song Association
   {
-    id: 6,
+    id: 7,
     title: 'Song Association',
     banner: 'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/Song%20Association%2Fbanner.webp?alt=media&token=289d4e75-a308-469e-a080-7afee7356123',
     website: 'https://play.google.com/store/apps/details?id=com.justinsj.songassociation',
@@ -217,7 +239,7 @@ export const projects: Project[] = [
   // },
 
   {
-    id: 7,
+    id: 8,
     title: 'Abigail Farm Supply Website',
     website: 'https://abigailfarmsupply.com/',
     banner: 'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/AFSI%2FAFSI-banner.PNG?alt=media&token=e9236189-f302-4f68-90b5-d93719a56144',
@@ -278,7 +300,7 @@ export const projects: Project[] = [
   // },
 
   {
-    id: 8,
+    id: 9,
     title: 'My Garden Online',
     website: 'https://my-garden-online.com/',
     banner: 'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/my-garden-online%2Fbanner.png?alt=media&token=56d3fd9a-3f3d-48e7-8f04-1cf56a0f0ba3',
