@@ -45,8 +45,8 @@ function Home(props: HomeStaticProps): React.ReactElement {
       <Banner onAbout={openAbout} onContact={openContact} />
 
       <ProjectList
-        title='Portfolio'
-        description={`Projects I've worked on recently`}
+        title='Projects'
+        description={`What I've worked on recently`}
         projects={projects}
         onProject={onProject}
       />

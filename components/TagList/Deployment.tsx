@@ -5,6 +5,7 @@ import type { Deployment } from 'config/projects';
 import React, { memo, useCallback } from 'react';
 import { Tuple } from 'types';
 import BaseTagList from './Base';
+import { Names } from '../../config/names';
 
 interface DeploymentListProps {
   skipHeader?: boolean;
@@ -18,8 +19,9 @@ function DeploymentList(props: DeploymentListProps): React.ReactElement {
     (entry: Tuple<string>): React.ReactNode => {
       const [platform, url] = entry;
       const color = Colors[platform];
+      const name = Names[platform];
 
-      const icon: React.ReactNode = <LinkOutlined />;
+      // const icon: React.ReactNode = <LinkOutlined />;
 
       return (
         <a
@@ -29,8 +31,8 @@ function DeploymentList(props: DeploymentListProps): React.ReactElement {
           target='_blank'
           rel='noopener noreferrer'
         >
-          <Tag icon={icon} color={color}>
-            {platform}
+          <Tag className='p-2 flex items-center text-base' color={color}>
+            View on {name}
           </Tag>
         </a>
       );
@@ -41,6 +43,7 @@ function DeploymentList(props: DeploymentListProps): React.ReactElement {
   return (
     <BaseTagList
       title='Deployments'
+      className={'justify-center'}
       skipHeader={skipHeader}
       data={Object.entries(deployment)}
       renderList={renderDeployment}

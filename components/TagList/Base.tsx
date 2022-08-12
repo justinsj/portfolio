@@ -8,13 +8,14 @@ interface BaseTagListProps {
   data: BaseTagListData[];
   skipHeader?: boolean;
   renderList: (item: BaseTagListData) => React.ReactNode;
+  className?: string;
 }
 
 function BaseTagList(props: BaseTagListProps): React.ReactElement {
-  const { data, renderList, title, skipHeader = false } = props;
+  const { data, renderList, title, skipHeader = false, className } = props;
 
   let list = (
-    <div className='flex flex-wrap'>
+    <div className={`flex flex-wrap ${className}`}>
       {React.Children.toArray(data.map(renderList))}
     </div>
   );

@@ -5,6 +5,7 @@ export type Deployment = {
   web?: string;
   android?: string;
   ios?: string;
+  github?: string;
 };
 
 export interface SubProject {
@@ -50,7 +51,9 @@ export const projects: Project[] = [
       'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/rec-sys-ui%2Fcomplete.jpg?alt=media&token=1e12e9b9-f5f7-44eb-a48d-82f3004bdd47',
       'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/rec-sys-ui%2Fsetup.jpg?alt=media&token=a8d9697f-2642-4d15-a1de-e68c694b72c3',
     ],
-    deployment: {},
+    deployment: {
+      github: 'https://github.com/justinsj/recommender-system-ui',
+    },
     subProjects: [],
   },
   {

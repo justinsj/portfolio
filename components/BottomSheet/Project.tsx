@@ -30,12 +30,16 @@ function ProjectBottomSheet(
     <BaseBottomSheet open={open} onDismiss={onDismiss}>
       <SubHeader title={title} description={description} />
       <StackTagList stack={stack} />
-      <DeploymentTagList deployment={deployment} />
+
+
       <Conditional condition={screenshots.length}>
         <ScreenShotList screenshots={screenshots} dimensions={dimensions} />
       </Conditional>
       <Conditional condition={subProjects.length}>
         <SubProjectTagList subProjects={subProjects} />
+      </Conditional>
+      <Conditional condition={Object.keys(deployment).length}>
+        <DeploymentTagList deployment={deployment} />
       </Conditional>
     </BaseBottomSheet>
   );

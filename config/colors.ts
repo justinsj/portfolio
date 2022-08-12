@@ -11,6 +11,7 @@ export const Colors: Record<string, string> = {
   react: '#61DAF6',
   nextjs: '#000000',
   d3: '#e97d1b',
+  web: '#000000',
 
   // Backend
   graphql: '#E535AB',
@@ -23,7 +24,7 @@ export const Colors: Record<string, string> = {
   redux: '#764ABC',
 
   // Mobile
-  reactnative: '#2D2D2D',
+  reactnative: '#61dafb',
   android: '#56A036',
   ios: '#0C76E2',
 
@@ -49,6 +50,7 @@ export const Colors: Record<string, string> = {
   testing: '#049C64',
   devops: '#059F00',
   resume: '#EEEBFF',
+  github: '#000000',
 
   // Skills
   algorithms: '#D44638',
@@ -99,5 +101,6 @@ export const Colors: Record<string, string> = {
   'education': '#1c4f0b',
   'learning and development': '#1c9698',
   'mental health': '#ba5353',
-
+  encoding: '#000000',
+  hashing: '#dd8c01',
 };
