@@ -103,4 +103,16 @@ export const Colors: Record<string, string> = {
   'mental health': '#ba5353',
   encoding: '#000000',
   hashing: '#dd8c01',
+
+  serverless: '#000000',
+  distributedsystems: '#006d9f',
+  gpu: '#0c7334',
+  fpga: '#ba5353',
+  machinelearning: '#000000',
+  hci: '#741ec1',
+  blockchain: '#1758b5',
+  privacy: '#006d9f',
+  security: '#1758b5',
+  smartcontract: '#006d9f',
+  dataanalysis: '#0998be',
 };

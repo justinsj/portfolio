@@ -20,10 +20,11 @@ export const defaultDimensions: Tuple<number> = [450, 220];
 export interface Project {
   id: number;
   title: string;
-  website: string;
+  website?: string;
+  date?: string;
   banner: string;
   description: string;
-  repository: Maybe<string>;
+  repository?: Maybe<string>;
   stack: Stack[];
   dimensions?: Tuple<number>; // Tuple of [height, width]
   screenshots: string[];

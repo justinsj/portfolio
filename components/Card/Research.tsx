@@ -4,23 +4,23 @@ import Image from 'next/image';
 import React, { memo } from 'react';
 import { background, BaseProps, border, color, dimensions } from './Base';
 
-interface AwardProps extends BaseProps {
+interface ResearchProps extends BaseProps {
   banner: string;
 }
 
-function Award(props: AwardProps): React.ReactElement {
+function Research(props: ResearchProps): React.ReactElement {
   const { title, banner, description, onClick } = props;
 
   return (
     <AntDesignCard
-      className={clsx(dimensions, border, color, 'cursor-auto')}
+      className={clsx(dimensions, border, color)}
       onClick={onClick}
       cover={
         <div className={'border border-transparent'}>
           <Image
             className={background}
             src={banner}
-            height={240}
+            height={565}
             width={400}
             objectFit='cover'
             alt={title}
@@ -36,4 +36,4 @@ function Award(props: AwardProps): React.ReactElement {
   );
 }
 
-export default memo(Award);
+export default memo(Research);

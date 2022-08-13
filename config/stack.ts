@@ -39,6 +39,16 @@ export enum Stack {
   gpu,
   fpga,
 
+  reinforcementlearning,
+  distributedsystems,
+  hci,
+  machinelearning,
+
+  blockchain,
+  security,
+  privacy,
+  smartcontracts,
+  dataanalysis,
 }
 
 export const WorkStack = [
@@ -126,7 +136,6 @@ export const StackInfo: Record<Stack, StackInfoMap> = {
     value: 'Redis',
     color: Colors.redis,
   },
-  [Stack.mongo]: {},
   [Stack.mongo]: {
     value: 'MongoDB',
     color: Colors.mongo,
@@ -147,4 +156,53 @@ export const StackInfo: Record<Stack, StackInfoMap> = {
     value: 'Algorithms',
     color: Colors.algorithms,
   },
+  [Stack.serverless]: {
+    value: 'Serverless',
+    color: Colors.serverless,
+  },
+  [Stack.distributedsystems]: {
+    value: 'Distributed Systems',
+    color: Colors.distributedsystems,
+  },
+  [Stack.gpu]: {
+    value: 'GPU',
+    color: Colors.gpu,
+  },
+  [Stack.fpga]: {
+    value: 'FPGA',
+    color: Colors.fpga,
+  },
+  [Stack.reinforcementlearning]: {
+    value: 'Reinforcement Learning',
+    color: Colors.machinelearning,
+  },
+  [Stack.hci]: {
+    value: 'HCI',
+    color: Colors.hci,
+  },
+  [Stack.machinelearning]: {
+    value: 'Machine Learning',
+    color: Colors.machinelearning,
+  },
+  [Stack.blockchain]: {
+    value: 'Blockchain',
+    color: Colors.blockchain,
+  },
+  [Stack.privacy]: {
+    value: 'Privacy',
+    color: Colors.privacy,
+  },
+  [Stack.security]: {
+    value: 'Security',
+    color: Colors.security,
+  },
+  [Stack.smartcontracts]: {
+    value: 'Smart Contracts',
+    color: Colors.smartcontract,
+  },
+  [Stack.dataanalysis]: {
+    value: 'Data Analysis',
+    color: Colors.dataanalysis,
+  },
+
 };

@@ -6,6 +6,7 @@ import dynamic from 'next/dynamic';
 import React, { useState } from 'react';
 import { Article, Video } from 'types';
 import { Award, awards } from '../config/awards';
+import { research } from '../config/research';
 
 interface HomeStaticProps {
   research: Project[];
@@ -21,7 +22,7 @@ const Header = dynamic(import('components/Header'));
 const Layout = dynamic(import('components/Layout'));
 
 const AwardList = dynamic(import('components/List/Award'));
-const ResearchList = dynamic(import('components/List/Project'));
+const ResearchList = dynamic(import('components/List/Research'));
 const ProjectList = dynamic(import('components/List/Project'));
 const ArticleList = dynamic(import('components/List/Article'));
 const VideoList = dynamic(import('components/List/Video'));
@@ -51,27 +52,21 @@ function Home(props: HomeStaticProps): React.ReactElement {
       <Header />
       <Banner onAbout={openAbout} onContact={openContact} />
 
-      <Conditional condition={config.awards}>
-        <AwardList
-          title='Awards'
-          description={`Achievements that showcase my tenacity.`}
-          awards={awards}
-        />
-      </Conditional>
-      <Conditional condition={config.research}>
-        <ResearchList
-          title='Research'
-          description={`Meticulously-studied papers I have written.`}
-          projects={research}
-          onProject={onProject}
-        />
-      </Conditional>
       <Conditional condition={config.projects}>
         <ProjectList
           title='Projects'
           description={`What I've worked on recently`}
           projects={projects}
           onProject={onProject}
+        />
+      </Conditional>
+
+      <Conditional condition={config.research}>
+        <ResearchList
+          title='Research'
+          description={`Meticulously-studied papers I have written.`}
+          research={research}
+          onResearch={onProject}
         />
       </Conditional>
 
@@ -88,6 +83,14 @@ function Home(props: HomeStaticProps): React.ReactElement {
           title='Videos'
           description='I also make videos'
           videos={videos}
+        />
+      </Conditional>
+
+      <Conditional condition={config.awards}>
+        <AwardList
+          title='Awards'
+          description={`Achievements that showcase my tenacity.`}
+          awards={awards}
         />
       </Conditional>
 
@@ -109,6 +112,7 @@ export async function getServerSideProps() {
   const videos = await API.getVideos();
 
   const props: HomeStaticProps = {
+    research,
     projects,
     awards,
     articles,
