@@ -34,6 +34,41 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    id: 11,
+    title: 'Financial Planner',
+    banner: 'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/financial%20planner%2Ffinancial%20planner.jpg?alt=media&token=2aad6ca9-fc64-43d9-89f5-ee511c1301e5',
+    website: 'https://finance.justinsj.com/',
+    description: 'Empowers financial freedom by projecting big-ticket decisions, incomes, and expenses with taxes automatically included.',
+    repository: 'https://github.com/justinsj/financial-planner',
+    stack: [
+      Stack.react,
+    ],
+    screenshots: [
+    ],
+    deployment: {
+      web: 'https://finance.justinsj.com/',
+    },
+    subProjects: [],
+  },
+  {
+    id: 10,
+    title: 'QuantConnect Trading Algorithm',
+    banner: 'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/trading%20algorithm%2Ftrading%20algorithm.jpg?alt=media&token=2907d330-3ef0-4dc5-880d-dd899c4a1d2d',
+    //website: 'https://justinsj.com/',
+    description: 'Production-environment trading algorithm with pipelined optimization for Probabilistic Sharpe Ratio build on QuantConnect.',
+    repository: 'https://github.com/justinsj/trading-algorithm',
+    stack: [
+      Stack.python,
+      Stack.dataanalysis,
+    ],
+    screenshots: [
+      ],
+    deployment: {
+      //github: 'https://github.com/justinsj/trading-algorithm',
+    },
+    subProjects: [],
+  },
+  {
     id: 0,
     title: 'Recommender System UI',
     banner: 'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/rec-sys-ui%2Fcover.jpg?alt=media&token=4b811cf9-2499-4668-8fcf-0056f92f1a29',
