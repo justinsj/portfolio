@@ -8,6 +8,7 @@ import { Article, Video } from 'types';
 import { Award, awards } from '../config/awards';
 
 interface HomeStaticProps {
+  research: Project[];
   projects: Project[];
   awards: Award[];
   videos: Video[];
@@ -20,6 +21,7 @@ const Header = dynamic(import('components/Header'));
 const Layout = dynamic(import('components/Layout'));
 
 const AwardList = dynamic(import('components/List/Award'));
+const ResearchList = dynamic(import('components/List/Project'));
 const ProjectList = dynamic(import('components/List/Project'));
 const ArticleList = dynamic(import('components/List/Article'));
 const VideoList = dynamic(import('components/List/Video'));
@@ -29,7 +31,7 @@ const ContactBottomSheet = dynamic(import('components/BottomSheet/Contact'));
 const ProjectBottomSheet = dynamic(import('components/BottomSheet/Project'));
 
 function Home(props: HomeStaticProps): React.ReactElement {
-  const { articles, videos, projects, awards } = props;
+  const { articles, videos, projects, awards, research } = props;
 
   const [initialProject] = projects;
   const [activeProject, setActiveProject] = useState<Project>(initialProject);
@@ -54,6 +56,14 @@ function Home(props: HomeStaticProps): React.ReactElement {
           title='Awards'
           description={`Achievements that showcase my tenacity.`}
           awards={awards}
+        />
+      </Conditional>
+      <Conditional condition={config.research}>
+        <ResearchList
+          title='Research'
+          description={`Meticulously-studied papers I have written.`}
+          projects={research}
+          onProject={onProject}
         />
       </Conditional>
       <Conditional condition={config.projects}>

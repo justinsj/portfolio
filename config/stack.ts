@@ -33,6 +33,12 @@ export enum Stack {
 
   // Skills
   algorithms,
+
+  // Systems
+  serverless,
+  gpu,
+  fpga,
+
 }
 
 export const WorkStack = [
