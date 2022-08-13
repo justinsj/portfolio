@@ -5,8 +5,11 @@ import useBoolean from 'hooks/useBoolean';
 import dynamic from 'next/dynamic';
 import React, { useState } from 'react';
 import { Article, Video } from 'types';
+import { Award, awards } from '../config/awards';
 
 interface HomeStaticProps {
+  projects: Project[];
+  awards: Award[];
   videos: Video[];
   articles: Article[];
 }
@@ -16,6 +19,7 @@ const Conditional = dynamic(import('components/Conditional'));
 const Header = dynamic(import('components/Header'));
 const Layout = dynamic(import('components/Layout'));
 
+const AwardList = dynamic(import('components/List/Award'));
 const ProjectList = dynamic(import('components/List/Project'));
 const ArticleList = dynamic(import('components/List/Article'));
 const VideoList = dynamic(import('components/List/Video'));
@@ -25,10 +29,11 @@ const ContactBottomSheet = dynamic(import('components/BottomSheet/Contact'));
 const ProjectBottomSheet = dynamic(import('components/BottomSheet/Project'));
 
 function Home(props: HomeStaticProps): React.ReactElement {
-  const { articles, videos } = props;
+  const { articles, videos, projects, awards } = props;
 
   const [initialProject] = projects;
   const [activeProject, setActiveProject] = useState<Project>(initialProject);
+
 
   const [about, openAbout, closeAbout] = useBoolean(false);
   const [contact, openContact, closeContact] = useBoolean(false);
@@ -44,12 +49,21 @@ function Home(props: HomeStaticProps): React.ReactElement {
       <Header />
       <Banner onAbout={openAbout} onContact={openContact} />
 
-      <ProjectList
-        title='Projects'
-        description={`What I've worked on recently`}
-        projects={projects}
-        onProject={onProject}
-      />
+      <Conditional condition={config.awards}>
+        <AwardList
+          title='Awards'
+          description={`Achievements that showcase my tenacity.`}
+          awards={awards}
+        />
+      </Conditional>
+      <Conditional condition={config.projects}>
+        <ProjectList
+          title='Projects'
+          description={`What I've worked on recently`}
+          projects={projects}
+          onProject={onProject}
+        />
+      </Conditional>
 
       <Conditional condition={config.articles}>
         <ArticleList
@@ -85,6 +99,8 @@ export async function getServerSideProps() {
   const videos = await API.getVideos();
 
   const props: HomeStaticProps = {
+    projects,
+    awards,
     articles,
     videos,
   };
