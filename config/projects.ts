@@ -31,20 +31,16 @@ export enum ProjectFilter {
 
 export const ProjectFilterInfo: Record<ProjectFilter, ProjectFilterMap> = {
   [ProjectFilter.frontend]: {
-    key: ProjectFilter.frontend,
     label: 'Web & App Development',
   },
   [ProjectFilter.backend]: {
-    key: ProjectFilter.backend,
     label: 'Backend & Automation',
   },
   [ProjectFilter.opensource]: {
-    key: ProjectFilter.opensource,
     label: 'Open Source Contributions',
   },
 }
 type ProjectFilterMap = {
-  key: ProjectFilter;
   label: string;
 }
 export interface Project {
@@ -251,6 +247,33 @@ export const projects: Project[] = [
     ]),
 	
   },
+  {
+    id: 12,
+    title: 'React Native Animated Tab Bar',
+    banner: 'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/react%20native%20animated%20tab%20bar%2Fdemo.gif?alt=media&token=fc536805-62c7-43c1-afb2-91a1fd7a6bae',
+    website: 'https://github.com/justinsj/react-native-animated-tab-bar',
+    description: 'Animated Sliding Tab Bar for React Native\n' +
+      '\n' +
+      'This project supports 2+ tabs with an animated bar to switch between the tabs.\n' +
+      '\n' +
+      'This project uses Expo.\n' +
+      '\n' +
+      'Inspired by Aditya Signh\'s original version.',
+    repository: 'https://github.com/justinsj/react-native-animated-tab-bar',
+    stack: [
+      Stack.reactnative,
+    ],
+    screenshots: [],
+    deployment: {
+      web: 'https://github.com/justinsj/react-native-animated-tab-bar',
+    },
+    subProjects: [],
+    filters: new Set([
+      ProjectFilter.opensource,
+      ProjectFilter.frontend,
+    ]),
+
+  },
   // Unify
   {
     id: 6,
@@ -419,6 +442,26 @@ export const projects: Project[] = [
     subProjects: [],
     filters: new Set([
       ProjectFilter.frontend,
+    ]),
+  },
+  {
+    id: 7,
+    title: 'Open Source Contributions',
+    banner: 'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/OpenSource%2Fdeathstarbench.jpg?alt=media&token=e34c3a19-07c4-41ad-850d-b04e9b6f0642',
+    website: 'https://github.com/delimitrou/DeathStarBench/pulls?q=is%3Apr+author%3Ajustinsj+is%3Aclosed+',
+    description: 'Some open source contributions I have made.',
+    repository: null,
+    stack: [
+      Stack.serverless,
+    ],
+    screenshots: [
+    ],
+    deployment: {
+      github: 'https://github.com/delimitrou/DeathStarBench/pulls?q=is%3Apr+author%3Ajustinsj+is%3Aclosed+',
+    },
+    subProjects: [],
+    filters: new Set([
+      ProjectFilter.opensource,
     ]),
   },
 ];
