@@ -56,7 +56,7 @@ export interface Project {
   screenshots: string[];
   deployment: Deployment;
   subProjects: SubProject[];
-  filters: Set<ProjectFilter>;
+  filters: ProjectFilter[];
 }
 
 export const projects: Project[] = [
@@ -76,9 +76,9 @@ export const projects: Project[] = [
       web: 'https://finance.justinsj.com/',
     },
     subProjects: [],
-    filters: new Set([
+    filters: [
       ProjectFilter.frontend,
-    ]),
+    ],
   },
   {
     id: 10,
@@ -97,9 +97,9 @@ export const projects: Project[] = [
       //github: 'https://github.com/justinsj/trading-algorithm',
     },
     subProjects: [],
-    filters: new Set([
+    filters: [
       ProjectFilter.backend,
-    ]),
+    ],
   },
   {
     id: 0,
@@ -124,10 +124,10 @@ export const projects: Project[] = [
       github: 'https://github.com/justinsj/recommender-system-ui',
     },
     subProjects: [],
-    filters: new Set([
+    filters: [
       ProjectFilter.frontend,
       ProjectFilter.opensource,
-    ]),
+    ],
   },
   {
     id: 1,
@@ -145,9 +145,9 @@ export const projects: Project[] = [
       web: 'https://graphs.justinsj.com/',
     },
     subProjects: [],
-    filters: new Set([
+    filters: [
       ProjectFilter.frontend,
-    ]),
+    ],
   },
   {
     id: 2,
@@ -174,9 +174,9 @@ export const projects: Project[] = [
       web: 'https://www.wati.io/',
     },
     subProjects: [],
-    filters: new Set([
+    filters: [
       ProjectFilter.backend,
-    ]),
+    ],
   },
   {
     id: 3,
@@ -196,9 +196,9 @@ export const projects: Project[] = [
       web: 'https://justinsj.com',
     },
     subProjects: [],
-    filters: new Set([
+    filters: [
       ProjectFilter.backend,
-    ]),
+    ],
   },
   // Readily
   {
@@ -223,9 +223,9 @@ export const projects: Project[] = [
       web: 'https://chrome.google.com/webstore/detail/readily/cmlialhageknokecbdeicpjeljbpdgbh?hl=en',
     },
     subProjects: [],
-    filters: new Set([
+    filters: [
       ProjectFilter.frontend,
-    ]),
+    ],
   },
   {
 	id: 5,
@@ -242,9 +242,9 @@ export const projects: Project[] = [
       web: 'https://github.com/justinsj/react-awesome-popups',
     },
     subProjects: [],
-    filters: new Set([
+    filters: [
       ProjectFilter.opensource,
-    ]),
+    ],
 	
   },
   {
@@ -252,7 +252,7 @@ export const projects: Project[] = [
     title: 'React Native Animated Tab Bar',
     banner: 'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/react%20native%20animated%20tab%20bar%2Fdemo.gif?alt=media&token=fc536805-62c7-43c1-afb2-91a1fd7a6bae',
     website: 'https://github.com/justinsj/react-native-animated-tab-bar',
-    description: 'Animated Sliding Tab Bar for React Native\n' +
+    description: 'Animated Sliding Tab Bar for React Native.\n' +
       '\n' +
       'This project supports 2+ tabs with an animated bar to switch between the tabs.\n' +
       '\n' +
@@ -268,10 +268,10 @@ export const projects: Project[] = [
       web: 'https://github.com/justinsj/react-native-animated-tab-bar',
     },
     subProjects: [],
-    filters: new Set([
+    filters: [
       ProjectFilter.opensource,
       ProjectFilter.frontend,
-    ]),
+    ],
 
   },
   // Unify
@@ -297,10 +297,10 @@ export const projects: Project[] = [
       android: 'https://justinsj.wixsite.com/portfolio#comp-jig5bc3k',
     },
     subProjects: [],
-    filters: new Set([
+    filters: [
       ProjectFilter.frontend,
       ProjectFilter.backend,
-    ]),
+    ],
   },
   // Song Association
   {
@@ -321,9 +321,9 @@ export const projects: Project[] = [
       android: 'https://play.google.com/store/apps/details?id=com.justinsj.songassociation',
     },
     subProjects: [],
-    filters: new Set([
+    filters: [
       ProjectFilter.frontend,
-    ]),
+    ],
   },
   // LTM VR
   // Nike HK
@@ -380,9 +380,9 @@ export const projects: Project[] = [
       web: 'https://abigailfarmsupply.com/',
     },
     subProjects: [],
-    filters: new Set([
+    filters: [
       ProjectFilter.frontend,
-    ]),
+    ],
   },
   // {
   //   id: 2,
@@ -440,9 +440,9 @@ export const projects: Project[] = [
     screenshots: [],
     deployment: {},
     subProjects: [],
-    filters: new Set([
+    filters: [
       ProjectFilter.frontend,
-    ]),
+    ],
   },
   {
     id: 7,
@@ -460,8 +460,8 @@ export const projects: Project[] = [
       github: 'https://github.com/delimitrou/DeathStarBench/pulls?q=is%3Apr+author%3Ajustinsj+is%3Aclosed+',
     },
     subProjects: [],
-    filters: new Set([
+    filters: [
       ProjectFilter.opensource,
-    ]),
+    ],
   },
 ];

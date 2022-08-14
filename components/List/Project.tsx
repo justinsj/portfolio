@@ -9,6 +9,7 @@ interface ProjectListProps extends SubHeaderProps {
   onProject: (project: Project) => void;
 }
 
+
 function ProjectList(props: ProjectListProps): React.ReactElement {
   const { title, description, projects, onProject } = props;
 
