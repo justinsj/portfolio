@@ -1,6 +1,10 @@
 import * as API from 'api';
 import config from 'config';
-import { Project, projects } from 'config/projects';
+import { Project } from 'config/projects';
+import { projects as appProjects } from 'config/projects.apps';
+import { projects as backendProjects } from 'config/projects.backend';
+import { projects as opensourceProjects } from 'config/projects.opensource';
+
 import useBoolean from 'hooks/useBoolean';
 import dynamic from 'next/dynamic';
 import React, { useState } from 'react';
@@ -9,8 +13,10 @@ import { Award, awards } from '../config/awards';
 import { research } from '../config/research';
 
 interface HomeStaticProps {
+  appProjects: Project[];
+  backendProjects: Project[];
+  opensourceProjects: Project[];
   research: Project[];
-  projects: Project[];
   awards: Award[];
   videos: Video[];
   articles: Article[];
@@ -32,9 +38,10 @@ const ContactBottomSheet = dynamic(import('components/BottomSheet/Contact'));
 const ProjectBottomSheet = dynamic(import('components/BottomSheet/Project'));
 
 function Home(props: HomeStaticProps): React.ReactElement {
-  const { articles, videos, projects, awards, research } = props;
+  const { appProjects, backendProjects, opensourceProjects,
+    articles, videos, awards, research } = props;
 
-  const [initialProject] = projects;
+  const [initialProject] = appProjects;
   const [activeProject, setActiveProject] = useState<Project>(initialProject);
 
 
@@ -52,11 +59,29 @@ function Home(props: HomeStaticProps): React.ReactElement {
       <Header />
       <Banner onAbout={openAbout} onContact={openContact} />
 
-      <Conditional condition={config.projects}>
+      <Conditional condition={appProjects}>
         <ProjectList
-          title='Projects'
-          description={`What I've worked on recently`}
-          projects={projects}
+          title='Web & App Development'
+          description={`I make breathtaking apps.`}
+          projects={appProjects}
+          onProject={onProject}
+        />
+      </Conditional>
+
+      <Conditional condition={backendProjects}>
+        <ProjectList
+          title='Backend & Automation'
+          description={`I love automating and designing for scale.`}
+          projects={backendProjects}
+          onProject={onProject}
+        />
+      </Conditional>
+
+      <Conditional condition={opensourceProjects}>
+        <ProjectList
+          title='Open Source Contributions'
+          description={`I also contribute to open-source projects`}
+          projects={opensourceProjects}
           onProject={onProject}
         />
       </Conditional>
@@ -112,8 +137,10 @@ export async function getServerSideProps() {
   const videos = await API.getVideos();
 
   const props: HomeStaticProps = {
+    appProjects,
+    backendProjects,
+    opensourceProjects,
     research,
-    projects,
     awards,
     articles,
     videos,
