@@ -29,7 +29,7 @@ function DeploymentList(props: DeploymentListProps): React.ReactElement {
           href={url}
           aria-label={platform}
           target='_blank'
-          rel='noopener noreferrer'
+          rel='noopener noreferrer nofollow'
         >
           <Tag className='p-2 flex items-center text-base' color={color}>
             View on {name}
