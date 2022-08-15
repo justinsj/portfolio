@@ -8,7 +8,7 @@ export const projects: Project[] = [
     title: 'REDbird Leadership Program',
     banner: 'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/extracurriculars%2Ftinetwork.jpg?alt=media&token=a069cce9-8998-403a-88d9-4481260fb26b',
     website: 'https://ti-network.weebly.com/',
-    description: 'Gold Awardee & Top Achiever. Chaired team of 8 to host 5 unique workshops to empower individuals.',
+    description: 'Gold Awardee & Top Achiever. Chaired team of 8 to host 5 unique workshops to empower individuals. I also coached our junior cohort and guided them through their own discovery and leadership journey.',
     repository: 'https://ti-network.weebly.com/',
     stack: [
     ],
