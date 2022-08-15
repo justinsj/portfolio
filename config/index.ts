@@ -1,6 +1,6 @@
 import { personal, Personal } from './personal';
 import { contact, Contact } from './contact';
-import { projects, Project } from './projects';
+import { Project } from './projects';
 import { research } from './research';
 import { articles, Articles } from './articles';
 import { videos, Videos } from './videos';
@@ -23,7 +23,6 @@ const config: Config = {
   contact,
   awards,
   research,
-  projects,
   articles,
   videos,
   analytics,
