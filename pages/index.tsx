@@ -4,6 +4,7 @@ import { Project } from 'config/projects';
 import { projects as appProjects } from 'config/projects.apps';
 import { projects as backendProjects } from 'config/projects.backend';
 import { projects as opensourceProjects } from 'config/projects.opensource';
+import { projects as extracurriculars } from 'config/projects.extracurriculars';
 
 import useBoolean from 'hooks/useBoolean';
 import dynamic from 'next/dynamic';
@@ -20,6 +21,7 @@ interface HomeStaticProps {
   awards: Award[];
   videos: Video[];
   articles: Article[];
+  extracurriculars: Project[];
 }
 
 const Banner = dynamic(import('components/Banner'));
@@ -62,7 +64,7 @@ function Home(props: HomeStaticProps): React.ReactElement {
       <Conditional condition={appProjects}>
         <ProjectList
           title='Web & App Development'
-          description={`I make breathtaking apps.`}
+          description={`I make breathtaking apps`}
           projects={appProjects}
           onProject={onProject}
         />
@@ -71,7 +73,7 @@ function Home(props: HomeStaticProps): React.ReactElement {
       <Conditional condition={backendProjects}>
         <ProjectList
           title='Backend & Automation'
-          description={`I love automating and designing for scale.`}
+          description={`I love automating and designing for scale`}
           projects={backendProjects}
           onProject={onProject}
         />
@@ -86,16 +88,16 @@ function Home(props: HomeStaticProps): React.ReactElement {
         />
       </Conditional>
 
-      <Conditional condition={config.research}>
+      <Conditional condition={research}>
         <ResearchList
           title='Research'
-          description={`Meticulously-studied papers I have written.`}
+          description={`Meticulously-studied papers I have written`}
           research={research}
           onResearch={onProject}
         />
       </Conditional>
 
-      <Conditional condition={config.articles}>
+      <Conditional condition={articles}>
         <ArticleList
           title='Articles'
           description={`When I'm not writing code, I write articles`}
@@ -103,7 +105,7 @@ function Home(props: HomeStaticProps): React.ReactElement {
         />
       </Conditional>
 
-      <Conditional condition={config.videos}>
+      <Conditional condition={videos}>
         <VideoList
           title='Videos'
           description='I also make videos'
@@ -111,11 +113,20 @@ function Home(props: HomeStaticProps): React.ReactElement {
         />
       </Conditional>
 
-      <Conditional condition={config.awards}>
+      <Conditional condition={awards}>
         <AwardList
           title='Awards'
-          description={`Achievements that showcase my tenacity.`}
+          description={`Achievements that showcase my tenacity`}
           awards={awards}
+        />
+      </Conditional>
+
+      <Conditional condition={extracurriculars}>
+        <ProjectList
+          title='Extracurriculars'
+          description={`I also enjoy giving back to the community`}
+          projects={extracurriculars}
+          onProject={onProject}
         />
       </Conditional>
 
@@ -144,6 +155,7 @@ export async function getServerSideProps() {
     awards,
     articles,
     videos,
+    extracurriculars,
   };
 
   return { props };
