@@ -21,12 +21,12 @@ function Article(props: ArticleProps): React.ReactElement {
   }
 
   return (
-    <a target='_blank' aria-label={title} href={url} rel='noopener noreferrer'>
+    <a className='flex' target='_blank' aria-label={title} href={url} rel='noopener noreferrer nofollow'>
       <AntDesignCard
-        className={clsx(dimensions, border, color, 'cursor-pointer')}
+        className={clsx(dimensions, border, color, 'cursor-pointer', 'flex flex-col')}
       >
         <div className='flex flex-col py-4 px-6'>
-          <span className='text-lg font-bold truncate text-ellipsis'>
+          <span className='text-lg font-bold'>
             {title}
           </span>
           <div className='flex my-2 overflow-x-hidden'>
