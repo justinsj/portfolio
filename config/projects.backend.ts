@@ -8,7 +8,7 @@ export const projects: Project[] = [
     title: 'Distributed Concurrent Image Processing',
     banner: 'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/DCIP%2Farchitecture.png?alt=media&token=68bb6137-d710-4d23-89ee-f2de137cd21e',
     website: 'https://justinsj.com',
-    description: 'Scalable Kubernetes & Docker distributed system for mass-processing of image payloads.',
+    description: 'Scalable Kubernetes & Docker distributed system for mass-processing of image payloads. Developed to process 10,000+ images for testing scheduling algorithms.',
     repository: null,
     stack: [
       Stack.kubernetes,
@@ -22,6 +22,42 @@ export const projects: Project[] = [
     },
     subProjects: [],
   },
+  {
+    id: 4,
+    title: 'Pose & Object Recognition AI Deployment System',
+    banner: 'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/Miro%2Fmiro.jpg?alt=media&token=af9034c1-5435-4c2d-a345-2398f844b8c2',
+    website: 'https://justinsj.com',
+    description: 'Autoscaling machine learning inference deployment system serving over 100,000 customers.',
+    repository: null,
+    stack: [
+      Stack.aws,
+      Stack.docker,
+      Stack.tensorflow,
+    ],
+    screenshots: [],
+    deployment: {
+      web: 'https://justinsj.com',
+    },
+    subProjects: [],
+  },
+  {
+    id: 5,
+    title: 'Object Recognition for Civil Engineering Sketches',
+    banner: 'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/ISA%2Fisa.jpg?alt=media&token=d83e7e2a-9690-4cb7-b6e4-e1324b6ecc77',
+    website: 'https://justinsj.com',
+    description: 'Novel Tensorflow architecture developed to recognize components and numbers in hand-drawn Civil Engineering sketches.',
+    repository: null,
+    stack: [
+      Stack.python,
+      Stack.machinelearning,
+    ],
+    screenshots: [],
+    deployment: {
+      // web: 'https://justinsj.com',
+    },
+    subProjects: [],
+  },
+
   {
     id: 2,
     title: 'WhatsApp Team Inbox',

@@ -49,6 +49,7 @@ export enum Stack {
   privacy,
   smartcontracts,
   dataanalysis,
+  tensorflow,
 }
 
 export const WorkStack = [
@@ -203,6 +204,10 @@ export const StackInfo: Record<Stack, StackInfoMap> = {
   [Stack.dataanalysis]: {
     value: 'Data Analysis',
     color: Colors.dataanalysis,
+  },
+  [Stack.tensorflow]: {
+    value: 'Tensorflow',
+    color: Colors.machinelearning,
   },
 
 };
