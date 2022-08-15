@@ -45,72 +45,14 @@ export interface Project {
   // T-Music
   // eHome
   // Apple Detector
-  // Stylist App
+  // Stylist Appode
   // Puricase
   // My Garden Online
   // Alchemy
   // Arcane Lands
 
-  // {
-  //   id: 0,
-  //   title: 'Miro.io Autoscaling Pose Analysis',
-  //   banner: null,
-  //   website: 'https://miro.io//',
-  //   description: 'Commercial WhatsApp Business API Solution',
-  //   repository: null,
-  //   stack: [
-  //     Stack.csharp,
-  //     Stack.node,
-  //     Stack.docker,
-  //     Stack.react,
-  //     Stack.python,
-  //   ],
-  //   screenshots: [],
-  //   deployment: {},
-  //   subProjects: [],
-  // },
 
 
-  // {
-  //   id: 2,
-  //   title: 'Business Financial Planner',
-  //   website: 'https://finance.justinsj.com',
-  //   banner: null,
-  //   description:
-  //     'A frictionless app to schedule home appliance maintenance.',
-  //   repository: null,
-  //   stack: [
-  //     Stack.reactnative,
-  //   ],
-  //   screenshots: [
-  //
-  //   ],
-  //   deployment: {
-  //     web: 'https://finance.justinsj.com',
-  //   },
-  //   subProjects: [],
-  // },
-  // {
-  //   id: 3,
-  //   title: 'Abode Home Maintenance',
-  //   website: 'https://expo.dev/@abodeapp/abode-app',
-  //   banner: null,
-  //   description:
-  //     'A frictionless app to schedule home appliance maintenance.',
-  //   repository: null,
-  //   stack: [
-  //     Stack.reactnative,
-  //   ],
-  //   screenshots: [
-  //
-  //   ],
-  //   deployment: {
-  //     web: 'https://expo.dev/@abodeapp/abode-app',
-  //     android: 'https://expo.dev/@abodeapp/abode-app',
-  //     ios: 'https://expo.dev/@abodeapp/abode-app',
-  //   },
-  //   subProjects: [],
-  // },
 
 
 // ];

@@ -6,7 +6,7 @@ export const defaultDimensions: Tuple<number> = [450, 220];
 
 export const projects: Project[] = [
   {
-    id: 7,
+    id: 8,
     title: 'Financial Planner',
     banner: 'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/financial%20planner%2Ffinancial%20planner.jpg?alt=media&token=2aad6ca9-fc64-43d9-89f5-ee511c1301e5',
     website: 'https://finance.justinsj.com/',
@@ -23,7 +23,7 @@ export const projects: Project[] = [
     subProjects: [],
   },
   {
-    id: 6,
+    id: 7,
     title: 'Recommender System UI',
     banner: 'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/rec-sys-ui%2Fcover.jpg?alt=media&token=4b811cf9-2499-4668-8fcf-0056f92f1a29',
     website: 'https://justinsj.com/',
@@ -47,7 +47,7 @@ export const projects: Project[] = [
     subProjects: [],
   },
   {
-    id: 5,
+    id: 6,
     title: 'Graph Algorithms Visualization',
     banner: 'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/Graphs%2Fdemo.gif?alt=media&token=814893d2-8659-45ba-9274-fd3f269cfe80',
     website: 'https://graphs.justinsj.com/',
@@ -64,7 +64,7 @@ export const projects: Project[] = [
     subProjects: [],
   },
   {
-    id: 4,
+    id: 5,
     title: 'Readily Chrome Extension',
     banner: 'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/Readily%2Fbanner.PNG?alt=media&token=ac98f0a7-88cc-45cd-ae6d-ecaed9168ace',
     website: 'https://chrome.google.com/webstore/detail/readily/cmlialhageknokecbdeicpjeljbpdgbh?hl=en',
@@ -83,6 +83,27 @@ export const projects: Project[] = [
     ],
     deployment: {
       web: 'https://chrome.google.com/webstore/detail/readily/cmlialhageknokecbdeicpjeljbpdgbh?hl=en',
+    },
+    subProjects: [],
+  },
+  {
+    id: 4,
+    title: 'Abode Home Maintenance',
+    website: 'https://expo.dev/@abodeapp/abode-app',
+    banner: 'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/abode%2Fcover.jpg?alt=media&token=15cb5241-e335-49c4-95d6-3b60cbc2247a',
+    description:
+      'A frictionless app to schedule home appliance maintenance. Users can set up their home appliances, pets, vehicles, and get timely notifications on when to maintain it.',
+    repository: null,
+    stack: [
+      Stack.reactnative,
+    ],
+    screenshots: [
+
+    ],
+    deployment: {
+      web: 'https://expo.dev/@abodeapp/abode-app',
+      android: 'https://expo.dev/@abodeapp/abode-app',
+      ios: 'https://expo.dev/@abodeapp/abode-app',
     },
     subProjects: [],
   },
