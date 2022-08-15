@@ -10,7 +10,11 @@ import useBoolean from 'hooks/useBoolean';
 import dynamic from 'next/dynamic';
 import React, { useState } from 'react';
 import { Article, Video } from 'types';
-import { Award, awards } from '../config/awards';
+import { Award } from '../config/awards';
+import { awards as academicAwards } from '../config/awards.academic';
+import { awards as leadershipAwards } from '../config/awards.leadership';
+import { awards as athleticAwards } from '../config/awards.athletic';
+
 import { research } from '../config/research';
 
 interface HomeStaticProps {
@@ -18,7 +22,9 @@ interface HomeStaticProps {
   backendProjects: Project[];
   opensourceProjects: Project[];
   research: Project[];
-  awards: Award[];
+  academicAwards: Award[];
+  leadershipAwards: Award[];
+  athleticAwards: Award[];
   videos: Video[];
   articles: Article[];
   extracurriculars: Project[];
@@ -41,7 +47,10 @@ const ProjectBottomSheet = dynamic(import('components/BottomSheet/Project'));
 
 function Home(props: HomeStaticProps): React.ReactElement {
   const { appProjects, backendProjects, opensourceProjects,
-    articles, videos, awards, research } = props;
+    articles, videos,
+    academicAwards, leadershipAwards, athleticAwards,
+    extracurriculars,
+    research } = props;
 
   const [initialProject] = appProjects;
   const [activeProject, setActiveProject] = useState<Project>(initialProject);
@@ -113,11 +122,27 @@ function Home(props: HomeStaticProps): React.ReactElement {
         />
       </Conditional>
 
-      <Conditional condition={awards}>
+      <Conditional condition={leadershipAwards}>
         <AwardList
-          title='Awards'
+          title='Leadership Awards'
+          description={`Achievements that showcase my leadership & teamwork`}
+          awards={leadershipAwards}
+        />
+      </Conditional>
+
+      <Conditional condition={academicAwards}>
+        <AwardList
+          title='Academic Awards'
           description={`Achievements that showcase my tenacity`}
-          awards={awards}
+          awards={academicAwards}
+        />
+      </Conditional>
+
+      <Conditional condition={athleticAwards}>
+        <AwardList
+          title='Athletic Awards'
+          description={`Achievements in the field of athleticism`}
+          awards={athleticAwards}
         />
       </Conditional>
 
@@ -152,7 +177,9 @@ export async function getServerSideProps() {
     backendProjects,
     opensourceProjects,
     research,
-    awards,
+    academicAwards,
+    leadershipAwards,
+    athleticAwards,
     articles,
     videos,
     extracurriculars,
