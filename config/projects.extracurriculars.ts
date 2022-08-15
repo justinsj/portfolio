@@ -26,11 +26,31 @@ export const projects: Project[] = [
     description: 'Organizing Committee Member. Orchestrated team of 18 to teach and support children in 3 different NGOs.',
     repository: 'https://justinsj.wixsite.com/portfolio/volunteering-services',
     stack: [
-      Stack.reactnative,
     ],
     screenshots: [],
     deployment: {
       web: 'https://justinsj.wixsite.com/portfolio/volunteering-services',
+    },
+    subProjects: [],
+  },
+  {
+    id: 0,
+    title: 'Teachings',
+    banner: 'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/extracurriculars%2Fteachings.jpg?alt=media&token=d5a2a13e-a158-4dd1-b13e-2138cd98b09a',
+    website: 'https://justinsj.com',
+    description: 'I love teaching and take the initiative to take instructional assistant roles in courses.\n' +
+      '\n' +
+      'Fall\t2022 - [IA] CS116: Introduction to Computer Science 2\n' +
+      'Spring\t2022 - [TA] CS251: Computer Organization and Design\n' +
+      'Winter\t2022 - [IA] CS116: Introduction to Computer Science 2\n' +
+      'Winter\t2022 - [TA] CS116: Introduction to Computer Science 2\n' +
+      'Fall\t2021 - [TA] CS116: Introduction to Computer Science 2\n',
+    repository: '',
+    stack: [
+    ],
+    screenshots: [],
+    deployment: {
+      // web: 'https://justinsj.com',
     },
     subProjects: [],
   },

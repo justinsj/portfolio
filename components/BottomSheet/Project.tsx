@@ -29,9 +29,9 @@ function ProjectBottomSheet(
   return (
     <BaseBottomSheet open={open} onDismiss={onDismiss}>
       <SubHeader title={title} description={description} />
-      <StackTagList stack={stack} />
-
-
+      <Conditional condition={stack.length}>
+        <StackTagList stack={stack} />
+      </Conditional>
       <Conditional condition={screenshots.length}>
         <ScreenShotList screenshots={screenshots} dimensions={dimensions} />
       </Conditional>
