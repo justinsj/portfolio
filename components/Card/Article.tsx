@@ -24,8 +24,9 @@ function Article(props: ArticleProps): React.ReactElement {
     <a className='flex' target='_blank' aria-label={title} href={url} rel='noopener noreferrer nofollow'>
       <AntDesignCard
         className={clsx(dimensions, border, color, 'cursor-pointer', 'flex flex-col')}
+        bodyStyle={{display:'flex', flexDirection:'column', flex: 1}}
       >
-        <div className='flex flex-col py-4 px-6'>
+        <div className='flex flex-col flex-1 py-4 px-6'>
           <span className='text-lg font-bold'>
             {title}
           </span>
@@ -33,7 +34,7 @@ function Article(props: ArticleProps): React.ReactElement {
             {React.Children.toArray(tags.map(renderTags))}
           </div>
           <span className='text-sm font-light line-clamp-2'>{description}</span>
-          <p className='text-xs font-light mt-2 text-right'>{date}</p>
+          <p className='mt-auto text-xs font-light mt-2 text-right'>{date}</p>
         </div>
       </AntDesignCard>
     </a>
