@@ -1,5 +1,4 @@
 import * as API from 'api';
-import config from 'config';
 import { Project } from 'config/projects';
 import { projects as appProjects } from 'config/projects.apps';
 import { projects as backendProjects } from 'config/projects.backend';
@@ -10,7 +9,6 @@ import useBoolean from 'hooks/useBoolean';
 import dynamic from 'next/dynamic';
 import React, { useState } from 'react';
 import { Article, Video } from 'types';
-import { Award } from '../config/awards';
 import { awards as academicAwards } from '../config/awards.academic';
 import { awards as leadershipAwards } from '../config/awards.leadership';
 import { awards as athleticAwards } from '../config/awards.athletic';
@@ -22,9 +20,9 @@ interface HomeStaticProps {
   backendProjects: Project[];
   opensourceProjects: Project[];
   research: Project[];
-  academicAwards: Award[];
-  leadershipAwards: Award[];
-  athleticAwards: Award[];
+  academicAwards: Project[];
+  leadershipAwards: Project[];
+  athleticAwards: Project[];
   videos: Video[];
   articles: Article[];
   extracurriculars: Project[];
@@ -35,7 +33,7 @@ const Conditional = dynamic(import('components/Conditional'));
 const Header = dynamic(import('components/Header'));
 const Layout = dynamic(import('components/Layout'));
 
-const AwardList = dynamic(import('components/List/Award'));
+const AwardList = dynamic(import('components/List/Project'));
 const ResearchList = dynamic(import('components/List/Research'));
 const ProjectList = dynamic(import('components/List/Project'));
 const ArticleList = dynamic(import('components/List/Article'));
@@ -126,7 +124,8 @@ function Home(props: HomeStaticProps): React.ReactElement {
         <AwardList
           title='Leadership Awards'
           description={`Achievements that showcase my leadership & teamwork`}
-          awards={leadershipAwards}
+          projects={leadershipAwards}
+          onProject={onProject}
         />
       </Conditional>
 
@@ -134,7 +133,8 @@ function Home(props: HomeStaticProps): React.ReactElement {
         <AwardList
           title='Academic Awards'
           description={`Achievements that showcase my tenacity`}
-          awards={academicAwards}
+          projects={academicAwards}
+          onProject={onProject}
         />
       </Conditional>
 
@@ -142,7 +142,8 @@ function Home(props: HomeStaticProps): React.ReactElement {
         <AwardList
           title='Athletic Awards'
           description={`Achievements in the field of athleticism`}
-          awards={athleticAwards}
+          projects={athleticAwards}
+          onProject={onProject}
         />
       </Conditional>
 

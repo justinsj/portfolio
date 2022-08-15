@@ -5,12 +5,10 @@ import { research } from './research';
 import { articles, Articles } from './articles';
 import { videos, Videos } from './videos';
 import { analytics, Analytics } from './analytics';
-import { awards, Award } from './awards';
 
 interface Config {
   personal: Personal;
   contact: Contact;
-  awards?: Award[];
   research?: Project[];
   projects?: Project[];
   articles?: Articles;
@@ -21,7 +19,6 @@ interface Config {
 const config: Config = {
   personal,
   contact,
-  awards,
   research,
   articles,
   videos,

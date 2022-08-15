@@ -42,7 +42,7 @@ function ScreenShotList(props: ScreenShotListProps): React.ReactElement {
 
   return (
     <SubHeader
-      title='Screenshots'
+      title='Images'
       description={
         <ScrollContainer
           className='list flex overflow-auto mt-2 mb-1'

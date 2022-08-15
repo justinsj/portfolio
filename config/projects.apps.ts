@@ -73,7 +73,7 @@ export const projects: Project[] = [
       Stack.react,
       Stack.aws,
     ],
-    dimensions: [343, 550],
+    dimensions: [250, 400],
     screenshots: [
       'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/Readily%2F1.%20Focus%20Guide.jpg?alt=media&token=4ba6cf30-ea1a-42a8-ba97-5cc578ad4cbc',
       'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/Readily%2F2.%20Make%20The%20Visual%20Suit%20You.jpg?alt=media&token=8ae49eee-9acf-4aaf-8b40-fe36feee8c2a',
