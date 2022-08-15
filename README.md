@@ -30,20 +30,20 @@ Custom providers can also be easily implemented. For example if you'd like to re
 ## Install
 
 ```
-npm install
+yarn install
 ```
 
 ## Developer
 
 ```
-npm run dev
+yarn dev
 ```
 
 ## Production
 
 ```
-npm run build
-npm run start
+yarn build
+yarn start
 ```
 
 ## Deploy
