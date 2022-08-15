@@ -2,8 +2,6 @@ import { Maybe, Tuple } from '../types';
 import { Stack } from './stack';
 import { Project } from './projects';
 
-export const defaultDimensions: Tuple<number> = [450, 220];
-
 export const projects: Project[] = [
   {
     id: 8,
@@ -34,6 +32,7 @@ export const projects: Project[] = [
       Stack.node,
       Stack.aws,
     ],
+    dimensions: [528, 220],
     screenshots: [
       'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/rec-sys-ui%2Fhome.jpg?alt=media&token=44f292b9-7c19-4412-9a35-95571f8e374a',
       'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/rec-sys-ui%2Frecs-control.jpg?alt=media&token=e439c559-2f2d-49f1-81ed-83ebd5be76b0',
@@ -74,6 +73,7 @@ export const projects: Project[] = [
       Stack.react,
       Stack.aws,
     ],
+    dimensions: [343, 550],
     screenshots: [
       'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/Readily%2F1.%20Focus%20Guide.jpg?alt=media&token=4ba6cf30-ea1a-42a8-ba97-5cc578ad4cbc',
       'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/Readily%2F2.%20Make%20The%20Visual%20Suit%20You.jpg?alt=media&token=8ae49eee-9acf-4aaf-8b40-fe36feee8c2a',
@@ -97,8 +97,15 @@ export const projects: Project[] = [
     stack: [
       Stack.reactnative,
     ],
+    dimensions: [476, 220],
     screenshots: [
-
+      'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/abode%2FX%20-%2031.jpg?alt=media&token=59efa6fc-7a2b-4484-be38-43dcd711df84',
+      'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/abode%2FX%20-%2029.jpg?alt=media&token=cd7dadc6-4c6d-40a8-b879-37536a2b6509',
+      'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/abode%2FX%20-%202.jpg?alt=media&token=899d2f03-b61a-4156-bd49-6db90c75582d',
+      'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/abode%2FX%20-%203.jpg?alt=media&token=87161f35-1083-40a1-82a2-1c58f9a99268',
+      'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/abode%2FX%20-%204.jpg?alt=media&token=264da9d8-e8d6-4754-bc86-79f24bf2bb47',
+      'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/abode%2FX%20-%208.jpg?alt=media&token=21d78823-0dd4-413d-b708-cb7a2821f207',
+      'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/abode%2FX%20-%2030.jpg?alt=media&token=9a728145-b031-45b1-a387-9875fb03bfbe',
     ],
     deployment: {
       web: 'https://expo.dev/@abodeapp/abode-app',
@@ -122,7 +129,6 @@ export const projects: Project[] = [
       'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/Unify%2FX%20-%201.png?alt=media&token=1027d3ac-41a2-4d51-9c36-624a6bcd3a00',
       'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/Unify%2FScreenshot_20181017-192826.jpg?alt=media&token=f3822c45-b2c5-4a1f-aef5-5a49cbc428be',
       'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/Unify%2FScreenshot_20181017-192832.jpg?alt=media&token=b33a025b-7a68-4178-8253-5a40ce50b99b',
-      'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/Unify%2FUnify%20Team%20Photo.jpg?alt=media&token=08b775b8-38de-4214-ad95-87265bfc3fd3',
     ],
     deployment: {
       web: 'https://justinsj.wixsite.com/portfolio#comp-jig5bc3k',
