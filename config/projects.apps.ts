@@ -73,7 +73,7 @@ export const projects: Project[] = [
       Stack.react,
       Stack.aws,
     ],
-    dimensions: [250, 400],
+    dimensions: [188, 300],
     screenshots: [
       'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/Readily%2F1.%20Focus%20Guide.jpg?alt=media&token=4ba6cf30-ea1a-42a8-ba97-5cc578ad4cbc',
       'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/Readily%2F2.%20Make%20The%20Visual%20Suit%20You.jpg?alt=media&token=8ae49eee-9acf-4aaf-8b40-fe36feee8c2a',
@@ -146,6 +146,7 @@ export const projects: Project[] = [
     stack: [
       Stack.reactnative,
     ],
+    dimensions: [140, 300],
     screenshots: [
       'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/Song%20Association%2Funnamed.webp?alt=media&token=6ee09eb4-9fe7-4150-bcb8-0fdd1c639205',
       'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/Song%20Association%2FWhatsApp%20Image%202021-08-21%20at%2017.46.32.jpeg?alt=media&token=ecb17858-8246-4ff4-aebe-48ec171695f5',

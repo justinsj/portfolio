@@ -73,6 +73,7 @@ export const projects: Project[] = [
       Stack.react,
       Stack.python,
     ],
+    dimensions: [281, 300],
     screenshots: [
       'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/WATI%2Fs1_send_noti-480x450.png?alt=media&token=5ccf7dc9-5733-4d39-bb96-33dad566ed64',
       'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/WATI%2Fs2_support_customer-480x450.png?alt=media&token=47a856e8-9a69-4e5f-b20c-bc54ef48099a',
