@@ -35,6 +35,27 @@ export const research: Project[] = [
   // },
   {
     id: 1,
+    title: 'Reducing the Cost of GPU Cold Starts in Serverless Deep Learning Inference Serving',
+    banner: 'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/Research%2FReducing%20the%20Cost%20of%20GPU%20Cold%20Starts%20in%20Serverless%20Deep%20Learning%20Inference%20Serving.png?alt=media&token=c66f140e-d1bc-4983-baa2-1d5bb324f568',
+    date: '2023',
+    website: 'https://uwaterloo.ca/scholar/sites/ca.scholar/files/jd2sanju/files/reducing_the_cost_of_gpu_cold_starts_in_serverless_deep_learning_inference_serving.pdf',
+    repository: '',
+    description: '2023 · The rapid growth of Deep Learning (DL) has led to increasing demand for DL-as-a-Service. In this paradigm, DL inferences are served on-demand through a serverless cloud provider, which manages the scaling of hardware resources to satisfy dynamic workloads. This is enticing to businesses due to lower infrastructure management costs compared to dedicated on-site hosting. However, current serverless systems suffer from long cold starts where requests are queued until a server can be initialized with the DL model, which is especially problematic due to large DL model sizes. In addition, low-latency demands such as in real-time fraud detection and algorithmic trading cause long inferences in CPU-only systems to violate deadlines. To tackle this, current systems rely on over-provisioning expensive GPU resources to meet low-latency requirements, thus increasing the total cost of ownership for cloud service providers.\n\nIn this work, we characterize the cold start problem in GPU-accelerated serverless systems. We then design and evaluate novel solutions based on two main techniques. Namely, we propose remote memory pooling and hierarchical sourcing with locality-aware autoscaling where we exploit underutilized memory and network resources to store and prioritize sourcing the DL model from existing host machines over remote host memory then cloud storage. We demonstrate through simulations that these techniques can perform up to 19.3× and 1.4× speedup in 99th percentile and median end-to-end latencies respectively compared to a baseline. Such speedups enable serverless systems to meet low-latency requirements despite dynamic workloads.',
+    stack: [
+      Stack.serverless,
+      Stack.reinforcementlearning,
+      Stack.distributedsystems,
+    ],
+    dimensions:  [517, 400],
+    screenshots: [
+    ],
+    deployment: {
+      web: 'https://uwaterloo.ca/scholar/sites/ca.scholar/files/jd2sanju/files/reducing_the_cost_of_gpu_cold_starts_in_serverless_deep_learning_inference_serving.pdf',
+    },
+    subProjects: [],
+  },
+  {
+    id: 2,
     title: 'A Deep Reinforcement Learning approach for Optimizing Function Allocation in Serverless with a Distributed Image Registry',
     banner: 'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/Research%2FA%20Deep%20Reinforcement%20Learning%20approach%20for%20Optimizing%20Function%20Allocation%20in%20Serverless%20with%20a%20Distributed%20Image%20Registry.png?alt=media&token=b6f0bf4c-4e96-42b7-bbd4-ea38290882fb',
     date: '2022',
@@ -55,7 +76,7 @@ export const research: Project[] = [
     subProjects: [],
   },
   {
-    id: 2,
+    id: 3,
     title: 'Tailoring Product Recommendations for Mobile Devices',
     banner: 'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/Research%2FTailoring%20Product%20Recommendations%20for%20Mobile%20Devices.png?alt=media&token=7011e127-fb77-4d6c-838e-8951cf805dc3',
     date: '2022',
@@ -76,7 +97,7 @@ export const research: Project[] = [
     subProjects: [],
   },
   {
-    id: 3,
+    id: 4,
     title: 'Enabling Parallel Smart Contract Execution Using SGX',
     banner: 'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/Research%2FEnabling%20Parallel%20Smart%20Contract%20Execution%20Using%20SGX.png?alt=media&token=08e5956c-a8f9-4694-aef5-fea12e73e1de',
     date: '2021',
@@ -97,7 +118,7 @@ export const research: Project[] = [
     subProjects: [],
   },
   {
-    id: 4,
+    id: 5,
     title: 'Data Privacy in Blockchain using Intel SGX: A Systematic Literature Review',
     banner: 'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/Research%2FData%20Privacy%20in%20Blockchain%20using%20Intel%20SGX%20-%20A%20Systematic%20Literature%20Review.png?alt=media&token=4c4c8931-f875-4585-9c16-e51300eb342e',
     date: '2021',
@@ -118,7 +139,7 @@ export const research: Project[] = [
     subProjects: [],
   },
   {
-    id: 5,
+    id: 6,
     title: 'Image Processing using Serverless Functions',
     banner: 'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/Research%2FImage%20Processing%20using%20Serverless%20Functions%20Final%20Report.png?alt=media&token=6daa28db-b0d4-410f-9466-244aa723219a',
     date: '2020',
@@ -138,7 +159,7 @@ export const research: Project[] = [
     subProjects: [],
   },
   {
-    id: 6,
+    id: 7,
     title: 'T-Music Web System',
     banner: 'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/Research%2FT-Music%20Web%20System%20Final%20Report.png?alt=media&token=e521ae76-f939-4eb8-bfc2-96a19f3e3f27',
     date: '2020',
@@ -159,7 +180,7 @@ export const research: Project[] = [
     subProjects: [],
   },
   {
-    id: 7,
+    id: 8,
     title: 'Comprehensive Analysis of Water Supply Shortage and Solutions in California',
     banner: 'https://firebasestorage.googleapis.com/v0/b/portfolio-90f8d.appspot.com/o/Research%2FComprehensive%20Analysis%20of%20Water%20Supply%20Shortage%20and%20Solutions%20in%20California.png?alt=media&token=78e33c8c-519d-44ce-b79b-a922e4ed1198',
     date: '2017',

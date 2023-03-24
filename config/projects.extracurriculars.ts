@@ -40,6 +40,7 @@ export const projects: Project[] = [
     website: 'https://justinsj.com',
     description: 'I love teaching and take the initiative to take instructional assistant roles in courses.\n' +
       '\n' +
+      'Winter\t2023 - [IA] CS116: Introduction to Computer Science 2\n' +
       'Fall\t2022 - [IA] CS116: Introduction to Computer Science 2\n' +
       'Spring\t2022 - [TA] CS251: Computer Organization and Design\n' +
       'Winter\t2022 - [IA] CS116: Introduction to Computer Science 2\n' +
